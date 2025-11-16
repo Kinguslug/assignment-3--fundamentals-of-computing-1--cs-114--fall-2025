@@ -9,24 +9,43 @@ public class Diamond {
 
     if (input % 2 == 0) {
       System.out.println("even");
-    } else {
-      for (int j = input / 2, i = 0; i != (input/2); i++, j--){
-        int spaceCounter = j;
-        int asteriskCounter = (2*i)+1;
 
-        if (i == (input/2)-1){
-          System.out.println("ahhhh broke");
-        }else{
-          while (spaceCounter-- > 0){
+    } else {
+
+      for (int i = 0, j = input; i != input; i++, j--){
+        int center = input / 2;
+
+
+
+        if (i <= center) {
+        int asteriskCounter = (2 * i) + 1;
+        int spaceCounter = center - i;
+
+          while (spaceCounter-- > 0) {
             System.out.print(" ");
-        }
+          }
 
           while (asteriskCounter-- > 0){
             System.out.print("*");
-        }
+          }
+
+          System.out.print("\n");
+
+        }else {
+        int mirror = (input - 1) - i;
+        int asteriskCounter = (2 * mirror) + 1;
+        int spaceCounter = center - mirror;
+
+          while (spaceCounter-- > 0) {
+            System.out.print(" ");
+          }
+
+          while (asteriskCounter-- > 0){
+            System.out.print("*");
+          }
+
           System.out.print("\n");
         }
-
       }
     }
 
