@@ -12,7 +12,7 @@ public class Diamond {
 
     } else {
 
-      for (int i = 0, j = input; i != input; i++, j--){
+      for (int i = 0; i != input; i++){
         int center = input / 2;
 
 
