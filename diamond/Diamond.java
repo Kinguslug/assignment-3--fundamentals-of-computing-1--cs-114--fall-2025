@@ -15,8 +15,6 @@ public class Diamond {
       for (int i = 0; i != input; i++){
         int center = input / 2;
 
-
-
         if (i <= center) {
         int asteriskCounter = (2 * i) + 1;
         int spaceCounter = center - i;
@@ -48,7 +46,6 @@ public class Diamond {
         }
       }
     }
-
     scanner.close();
   }
 }
