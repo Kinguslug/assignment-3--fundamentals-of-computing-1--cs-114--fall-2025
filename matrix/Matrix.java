@@ -1,4 +1,4 @@
-public class Matrix {
+ public class Matrix {
   private int[][] matrix;
 
   public Matrix(int size) {
